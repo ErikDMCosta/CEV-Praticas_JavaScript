@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body {
+            background:rgb(125, 125, 182);
+            color: white;
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
+<!--<div id = "msg">Clique em mim</div> -->
+    <div class = "msg">Clique em mim</div>
+    <script>
+/*
+        window.document.write('<br>')        
+        window.document.write('Olá, Mundo!<br></br>')
+        window.document.write(window.document.charset)
+
+        window.document.write('<br></br>')
+        window.document.write(window.navigator.appName)
+        window.document.write('<br></br>')
+        window.document.write(window.document.URL)
+*/
+
+
+        //p1.style.color = 'blue'
+        //corpo.style.background = 'black'
+
+//        var p1 = window.document.getElementsByTagName('p')[0]
+
+//        window.document.write('Está escrito assim: ' + p1.innerText + '<br>')
+//        window.document.write('Está escrito assim: ' + p2.innerText + '<br>')
+
+//        document.write(p2.innerText + '<br>')
+//        document.write(p2.innerHTML)
+/*
+        window.alert(p2.innerHTML)
+        window.alert(p2.innerText)
+*/
+        var corpo = window.document.body
+        var p2 = window.document.getElementsByTagName('p')[1]
+
+        //var d = window.document.getElementsByName('msg')[0]
+        //d.style.background = 'green'
+        //d.innerText = 'Estou aguardando...'
+        //d.innerText = 'Olá'
+        //window.document.getElementById('msg').innerText = 'Olá!'
+
+        var d = window.document.querySelector('div.msg')
+        d.style.background = 'blue'
+    </script>
+
+</body>
+</html>
