@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Pais que Vivemos</title>
+</head>
+<body>
+    <h1>O Pais em que estamos - DESAFIO do Exercício JS-009.js</h1>
+    <p>Digite o nome do pais que você mora <input type="text" name='txtpais' id='txtpais'>
+    atualmente. <input type="button" value='Verificar' onclick="resposta()"></p>
+
+    <div id = "res">
+    </div>
+
+        <script>
+            function resposta() {
+                var txtpais = window.document.querySelector('input#txtpais')
+
+                var res = window.document.querySelector('div#res')
+
+                var resposta = String(txtpais.value) 
+
+                res.innerHTML=`<p>Seu pais atual é <strong>${resposta}</strong>.</p>`
+
+                res.innerHTML=`<p>Seu pais atual é <strong>${resposta}</strong>.</p><br>`
+
+                if (resposta != 'Brasil') {
+                    res.innerHTML = `Seu pais atual é <strong>${resposta}</strong>.<br>
+                    Você é Estrangeiro`
+
+                } else {
+                    res.innerHTML = `Seu pais atual é <strong>${resposta}</strong>.<br>
+                    Você é Brasileiro`
+                }
+            }
+        </script>
+    
+</body>
+</html>
